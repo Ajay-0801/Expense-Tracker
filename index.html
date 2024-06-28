@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Tracker</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="expense-div">
+            <div class="head-div"><h2>Expense-Tracker</h2></div>
+            <br>
+            <select name="" id="select" required>
+                <option value="">Select One Option</option>
+                <option value="Transpotation">Transpotation</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Gloceries">Gloceries</option>
+                <option value="Home">Home</option>
+            </select>
+            <br>
+            <input type="text" placeholder="Description" id="desc" required>
+            <br>
+            <input type="number" placeholder="Amount" id="Amount">
+            <br>
+            <button id = 'btn' >Add Expense</button>
+        <table class="table-div">
+            <thead>
+                <tr>
+                    <td>Selected</td>
+                    <td>Description</td>
+                    <td>Amount</td>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
